@@ -114,3 +114,10 @@ public class ProxyHelper
         }
     }
 ```
+
+#### 使用方法
+
+```
+ var proxy = await ProxyHelper.GeneralProxyAsync();
+ System.Diagnostics.Debug.WriteLine((proxy as WebProxy)?.Address?.ToString());
+```
