@@ -18,7 +18,7 @@
 
 #### 代理工厂示例
 
-```
+```csharp
 public class ProxyHelper
     {
         private static HashSet<ProxyGenerator> ProxyGenerators = new HashSet<ProxyGenerator>();
@@ -117,7 +117,7 @@ public class ProxyHelper
 
 #### 使用方法
 
-```
+```csharp
  var proxy = await ProxyHelper.GeneralProxyAsync();
  System.Diagnostics.Debug.WriteLine((proxy as WebProxy)?.Address?.ToString());
 ```
